@@ -1,0 +1,55 @@
+/* Variáveis CSS (custom properties): mude a cor em um lugar só. */
+:root {
+  --cor-texto: #1b2a41;
+  --cor-fundo: #f3f5f7;
+  --cor-destaque: #0b6e8a;
+  --cor-marca: #f4e3a8;
+}
+
+/* Seletor de elemento: vale para todas as tags body. */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Seletor de classe: começa com ponto. Pode ser usado várias vezes. */
+.destaque {
+  background-color: var(--cor-marca);
+  padding: 0 0.25em;
+}
+
+/* Seletor de id: começa com #. */
+#aviso {
+  border-left: 4px solid var(--cor-destaque);
+  padding: 0.5rem 1rem;
+}
+
+/* Pseudoclasses: estilos para um estado do elemento. */
+a {
+  color: var(--cor-destaque);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Foco visível para quem navega pelo teclado: não remova! */
+a:focus-visible {
+  outline: 3px solid #f4b942;
+  outline-offset: 2px;
+}
+
+/* Seletor combinado: só li dentro de .zebra, nas posições ímpares. */
+.zebra li:nth-child(odd) {
+  background-color: #e3e9ef;
+}

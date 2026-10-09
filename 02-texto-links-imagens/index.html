@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02 - Texto, links e imagens</title>
+</head>
+<body>
+  <h1>Texto, links e imagens</h1>
+
+  <h2>Títulos e parágrafos</h2>
+  <!-- h1 a h6: use um único h1 por página e não pule níveis. -->
+  <p>
+    Um parágrafo comum. Use <strong>negrito</strong> para o que é importante,
+    <em>itálico</em> para dar ênfase e <code>code</code> para trechos de código.
+  </p>
+  <p>Uma quebra de linha<br>dentro do mesmo parágrafo.</p>
+  <hr>
+  <blockquote>
+    <p>Uma citação longa fica dentro de blockquote.</p>
+  </blockquote>
+  <pre><code>print("Bloco de código preserva
+    os espaços e as quebras de linha")</code></pre>
+
+  <h2>Links</h2>
+  <ul>
+    <li><a href="../index.html">Link relativo: volta ao índice do repositório</a></li>
+    <li>
+      <a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">
+        Link externo: MDN Web Docs
+      </a>
+      (abre em nova aba; rel="noopener noreferrer" é uma boa prática de segurança)
+    </li>
+    <li><a href="#imagens">Âncora: pula para a seção Imagens, nesta página</a></li>
+    <li><a href="mailto:voce@exemplo.com">E-mail: abre o programa de e-mail</a></li>
+  </ul>
+
+  <h2 id="imagens">Imagens</h2>
+  <!-- alt descreve a imagem para quem não pode vê-la; width e height evitam "pulos" no carregamento. -->
+  <img src="img/formas.svg" alt="Círculo azul sobre um quadrado amarelo" width="240" height="160">
+
+  <figure>
+    <img src="img/formas.svg" alt="Círculo azul sobre um quadrado amarelo" width="240" height="160">
+    <figcaption>Figura 1: figure e figcaption ligam a imagem à sua legenda.</figcaption>
+  </figure>
+</body>
+</html>

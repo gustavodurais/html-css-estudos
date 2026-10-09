@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="160" viewBox="0 0 240 160" role="img" aria-labelledby="t">
+  <title id="t">Círculo azul sobre um quadrado amarelo</title>
+  <rect width="240" height="160" fill="#f3f5f7"/>
+  <rect x="40" y="30" width="100" height="100" fill="#f4b942"/>
+  <circle cx="140" cy="80" r="50" fill="#0b6e8a"/>
+</svg>

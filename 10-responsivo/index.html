@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Sem esta linha, o celular mostra a página "encolhida" como se fosse um desktop. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 - Design responsivo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>Design responsivo</h1>
+    <p>Redimensione a janela do navegador e observe o layout mudar.</p>
+  </header>
+
+  <main class="colunas">
+    <section class="coluna">
+      <h2>Coluna A</h2>
+      <p>Em telas pequenas as colunas ficam empilhadas. A partir de 700px, ficam lado a lado.</p>
+    </section>
+    <section class="coluna">
+      <h2>Coluna B</h2>
+      <p>O tamanho do título usa <code>clamp()</code> e cresce junto com a janela, dentro de um limite.</p>
+    </section>
+    <section class="coluna">
+      <h2>Coluna C</h2>
+      <img src="../02-texto-links-imagens/img/formas.svg"
+           alt="Círculo azul sobre um quadrado amarelo" width="240" height="160">
+    </section>
+  </main>
+
+  <p class="rodape"><a href="../index.html">Voltar ao índice</a></p>
+</body>
+</html>

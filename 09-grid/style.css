@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #1b2a41;
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+a {
+  color: #0b6e8a;
+}
+
+/* Layout com áreas nomeadas: o desenho está no próprio CSS. */
+.pagina {
+  display: grid;
+  grid-template-columns: 10rem 1fr;  /* 10rem fixos + o resto (1fr) */
+  grid-template-areas:
+    "topo    topo"
+    "lateral principal"
+    "rodape  rodape";
+  gap: 0.75rem;
+}
+
+.topo { grid-area: topo; }
+.lateral { grid-area: lateral; }
+.principal { grid-area: principal; min-height: 8rem; }
+.rodape { grid-area: rodape; }
+
+.pagina > * {
+  padding: 1rem;
+  background-color: #e3f1f5;
+  border: 2px solid #0b6e8a;
+}
+
+/* auto-fit + minmax: quantas colunas de pelo menos 8rem couberem. */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 0.75rem;
+}
+
+.foto {
+  display: grid;
+  place-items: center;   /* centraliza o conteúdo nas duas direções */
+  aspect-ratio: 4 / 3;
+  font-size: 1.5rem;
+  background-color: #f4e3a8;
+}

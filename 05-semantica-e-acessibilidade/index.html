@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05 - Semântica e acessibilidade</title>
+</head>
+
+<body>
+  <!-- Link para quem navega só pelo teclado pular o menu. -->
+  <a href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- header: cabeçalho da página (ou de uma seção). -->
+  <header>
+    <p>Diário de estudos</p>
+    <!-- nav: bloco de navegação. aria-label diferencia de outros nav. -->
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#conteudo">Artigo</a></li>
+        <li><a href="#lateral">Links úteis</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main: o conteúdo principal. Usar um por página. -->
+  <main id="conteudo">
+    <!-- article: conteúdo que faz sentido sozinho (post, notícia). -->
+    <article>
+      <h1>O que aprendi sobre tags semânticas</h1>
+      <p>
+        Publicado em <time datetime="2026-10-07">7 de outubro de 2026</time>
+      </p>
+
+      <!-- section: parte temática do conteúdo, normalmente com um título. -->
+      <section>
+        <h2>Por que usar</h2>
+        <p>
+          Tags com significado ajudam leitores de tela, buscadores e quem
+          mantém o código a entender a estrutura da página.
+        </p>
+      </section>
+
+      <section>
+        <h2>Exemplo de imagem acessível</h2>
+        <figure>
+          <img src="../02-texto-links-imagens/img/formas.svg" alt="Círculo azul sobre um quadrado amarelo" width="240"
+            height="160">
+          <figcaption>O texto alternativo descreve o que a imagem mostra.</figcaption>
+        </figure>
+      </section>
+    </article>
+
+    <!-- aside: conteúdo relacionado, mas secundário. -->
+    <aside id="lateral">
+      <h2>Links úteis</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">HTML
+            na MDN</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- footer: rodapé da página (ou de uma seção). -->
+  <footer>
+    <p>Página de estudo. <a href="../index.html">Voltar ao índice</a></p>
+  </footer>
+</body>
+
+</html>

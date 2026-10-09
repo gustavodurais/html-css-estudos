@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03 - Listas e tabelas</title>
+</head>
+<body>
+  <h1>Listas e tabelas</h1>
+
+  <h2>Lista não ordenada (ul)</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS
+      <ul>
+        <li>Flexbox</li>
+        <li>Grid</li>
+      </ul>
+    </li>
+    <li>Python</li>
+  </ul>
+
+  <h2>Lista ordenada (ol)</h2>
+  <ol>
+    <li>Abrir o editor</li>
+    <li>Escrever o HTML</li>
+    <li>Abrir o arquivo no navegador</li>
+  </ol>
+
+  <h2>Lista de descrição (dl)</h2>
+  <dl>
+    <dt>HTML</dt>
+    <dd>Define a estrutura e o conteúdo da página.</dd>
+    <dt>CSS</dt>
+    <dd>Define a aparência da página.</dd>
+  </dl>
+
+  <h2>Tabela</h2>
+  <!-- Tabelas servem para dados em linhas e colunas, nunca para montar o layout da página. -->
+  <table border="1" cellpadding="6">
+    <caption>Situação dos estudos</caption>
+    <thead>
+      <tr>
+        <th scope="col">Assunto</th>
+        <th scope="col">Status</th>
+        <th scope="col">Horas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Python básico</th>
+        <td>Concluído</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <th scope="row">HTML</th>
+        <td>Em andamento</td>
+        <td>6</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row" colspan="2">Total</th>
+        <td>26</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <p><a href="../index.html">Voltar ao índice</a></p>
+</body>
+</html>
